@@ -113,7 +113,7 @@ class Local(Common):
     INSTALLED_APPS = Common.INSTALLED_APPS + ('debug_toolbar',)
 
     DATABASES = values.DatabaseURLValue(
-        'postgres://postgres:password@localhost/{{cookiecutter.repò_name}}')
+        'postgres://postgres:password@localhost/{{cookiecutter.repo_name}}')
 
     MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
